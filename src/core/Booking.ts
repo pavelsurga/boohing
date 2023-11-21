@@ -7,7 +7,7 @@ interface BookingConstructor {
     guestsCount: string
 }
 
-export default class Booking {
+export class Booking {
 
     startTime: string
     duration: string
