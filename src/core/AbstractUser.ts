@@ -19,4 +19,6 @@ export class AbstractUser {
   public setRate(newRate: number) {
     this.rate = newRate
   }
+
+
 }
