@@ -71,7 +71,7 @@ export class Place {
         this.placeType = newPlaceType
     }
 
-    public setgeo(newGeo: Record<string, string>) {
+    public setGeo(newGeo: Record<string, string>) {
         this.geo = newGeo
     }
 
