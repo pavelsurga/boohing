@@ -3,10 +3,6 @@ export class AbstractUser {
     name: string;
     avatar: string;
     rate: number;
- 
-  greet() {
-    return this.id;
-  }
 
   public setName(newName: string) {
     this.name = newName
