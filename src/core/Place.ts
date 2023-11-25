@@ -10,6 +10,8 @@ interface PlaceConstructor {
     admin: string
     placeType: string[]
     geo: Record<string, string>
+    stocks: string
+    promo: string[]
 }
 
 export class Place {
@@ -24,9 +26,11 @@ export class Place {
     admin: string
     placeType: string[]
     geo: Record<string, string>
+    stocks: string
+    promo: string[]
 
     constructor({ rate, avatar, name, id, photos, conditions,
-        statistics, admin, placeType, geo }: PlaceConstructor) {
+        statistics, admin, placeType, geo, stocks, promo }: PlaceConstructor) {
             this.rate = rate
             this.avatar = avatar
             this.name = name
@@ -37,6 +41,8 @@ export class Place {
             this.admin = admin
             this.placeType = placeType
             this.geo = geo
+            this.stocks = stocks
+            this.promo = promo
     }
 
     public setName(newName: string) {
@@ -73,6 +79,10 @@ export class Place {
 
     public setGeo(newGeo: Record<string, string>) {
         this.geo = newGeo
+    }
+
+    public setPromo(newPromo: string[]) {
+        this.promo = newPromo
     }
 
     // create place plan
