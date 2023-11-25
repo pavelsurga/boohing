@@ -20,8 +20,8 @@ export class AbstractTable {
         this.id = newId
     }
 
-    public setLimiteGuest(newLimiteGuest: string) {
-        this.limitGuest = newLimiteGuest
+    public setLimitGuest(newLimitGuest: string) {
+        this.limitGuest = newLimitGuest
     }
 
     public setConditions(newConditions: Record<string, string>) {

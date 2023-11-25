@@ -6,10 +6,15 @@ interface GuestConstructor {
     name: string
     id: string
     age: number
+    promo: string[]
 }
 
 export class Guest extends AbstractUser {
-    age: number;
+    age: number
+    avatar: string
+    name: string
+    id: string
+    promo: string[]
 
     constructor({ rate, avatar, name, id, age }: GuestConstructor) {
         super()
@@ -22,6 +27,10 @@ export class Guest extends AbstractUser {
 
     public setAge(newAge: number) {
         this.age = newAge
+    }
+
+    public setPromo(newPromo: string[]) {
+        this.promo = newPromo
     }
 
     //open booking
