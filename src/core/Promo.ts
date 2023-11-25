@@ -3,7 +3,7 @@ interface PromoConstructor {
     id: string
     lifeTime: Record<string, string>
     name: string
-    discription: string
+    description: string
 }
 
 export class Promo {
@@ -11,29 +11,25 @@ export class Promo {
     id: string
     lifeTime: Record<string, string>
     name: string
-    discription: string
+    description: string
 
-    constructor({ id, lifeTime, name, discription }: PromoConstructor) {
+    constructor({ id, lifeTime, name, description }: PromoConstructor) {
         this.id = id
         this.lifeTime = lifeTime
         this.name = name
-        this.discription = discription
+        this.description = description
     }
 
-    public setId (newId: string) {
-        this.id = newId
-    } 
-
-    public setlifeTime (newlifeTime: Record<string, string>) {
-        this.lifeTime = newlifeTime
+    public setLifeTime (newLifeTime: Record<string, string>) {
+        this.lifeTime = newLifeTime
     } 
 
     public setName (newName: string) {
         this.name = newName
     } 
 
-    public setDiscription (newDiscription: string) {
-        this.discription = newDiscription
+    public setDescription (newDescription: string) {
+        this.description = newDescription
     } 
 
 }

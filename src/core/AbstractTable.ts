@@ -1,7 +1,7 @@
 export class AbstractTable {
 
     photos: string[]
-    position: string
+    planTableId: string
     id: string
     limitGuest: string
     conditions: Record<string, string>
@@ -12,12 +12,8 @@ export class AbstractTable {
         this.photos = newPhotos
     }
 
-    public setPosition(newPosition: string) {
-        this.position = newPosition
-    }
-
-    public setId(newId: string) {
-        this.id = newId
+    public setPlanTableId(newPlanTableId: string) {
+        this.planTableId = newPlanTableId
     }
 
     public setLimitGuest(newLimitGuest: string) {

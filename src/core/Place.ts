@@ -53,10 +53,6 @@ export class Place {
         this.avatar = newAvatar
     }
 
-    public setId(newId: string) {
-        this.id = newId
-    }
-
     public setRate(newRate: number) {
         this.rate = newRate
     }
