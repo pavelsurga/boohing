@@ -18,11 +18,11 @@ export class Guest extends AbstractUser {
 
     constructor({ rate, avatar, name, id, age }: GuestConstructor) {
         super()
-        this.setAvatar(avatar)
-        this.setId(id)
-        this.setName(name)
-        this.setRate(rate)
-        this.setAge(age)
+        this.avatar = avatar
+        this.id = id
+        this.name = name
+        this.rate = rate
+        this.age = age
     }
 
     public setAge(newAge: number) {

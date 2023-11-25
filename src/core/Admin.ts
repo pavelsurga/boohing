@@ -1,6 +1,6 @@
 import { AbstractUser } from "./AbstractUser";
 
-interface AdminContructor {
+interface AdminConstructor {
     name: string
     id: string
     rate: number
@@ -8,13 +8,13 @@ interface AdminContructor {
 }
 
 export class Admin extends AbstractUser {
-    constructor({ rate, avatar, name, id }: AdminContructor) {
+    constructor({ rate, avatar, name, id }: AdminConstructor) {
         super()
-        this.setAvatar(avatar)
-        this.setId(id)
-        this.setName(name)
-        this.setRate(rate)
-    }
+        this.avatar = avatar
+        this.id = id
+        this.name = name
+        this.rate = rate
+    } 
 
     // accept booking
 

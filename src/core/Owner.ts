@@ -11,10 +11,10 @@ export class Owner extends AbstractUser {
 
     constructor({ rate, avatar, name, id }: OwnerConstructor) {
         super()
-        this.setAvatar(avatar)
-        this.setId(id)
-        this.setName(name)
-        this.setRate(rate)
+        this.avatar = avatar
+        this.id = id
+        this.name = name
+        this.rate = rate
     }
 
     // create place
