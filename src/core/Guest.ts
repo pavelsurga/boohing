@@ -10,11 +10,10 @@ interface GuestConstructor {
 }
 
 export class Guest extends AbstractUser {
-    ate: number
+    age: number
     avatar: string
     name: string
     id: string
-    age: number
     promo: string[]
 
     constructor({ rate, avatar, name, id, age }: GuestConstructor) {
