@@ -1,12 +1,12 @@
 export class AbstractTable {
 
-    photos: string[]
-    planTableId: string
-    id: string
-    limitGuest: string
-    conditions: Record<string, string>
+    photos: string[] = []
+    planTableId!: string
+    id!: string
+    limitGuest!: string
+    conditions!: Record<string, string>
     statistics: unknown
-    acceptedBookings: string[]
+    acceptedBookings: string[] = []
 
     public setPhotos(newPhotos: string[]) {
         this.photos = newPhotos
