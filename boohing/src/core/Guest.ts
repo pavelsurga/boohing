@@ -16,13 +16,14 @@ export class Guest extends AbstractUser {
     id: string
     promo: string[]
 
-    constructor({ rate, avatar, name, id, age }: GuestConstructor) {
+    constructor({ rate, avatar, name, id, age, promo }: GuestConstructor) {
         super()
         this.avatar = avatar
         this.id = id
         this.name = name
         this.rate = rate
         this.age = age
+        this.promo = promo
     }
 
     public setAge(newAge: number) {
