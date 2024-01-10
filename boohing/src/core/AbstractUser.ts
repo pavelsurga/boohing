@@ -1,8 +1,8 @@
 export class AbstractUser {
-    id: string;
-    name: string;
-    avatar: string;
-    rate: number;
+    id: string | undefined;
+    name: string | undefined;
+    avatar: string | undefined;
+    rate: number | undefined;
 
   public setName(newName: string) {
     this.name = newName
